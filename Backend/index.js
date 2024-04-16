@@ -39,7 +39,7 @@ app.get("/todos", async function(req,res){
 })
 
 app.put("/completed", async function(req,res){
-    const updatedPayload = req.bodyl
+    const updatedPayload = req.body
     const parsedPayload = updateTodo.safeParse(updatedPayload);
     if(!parsedPayload.success){
         res.status(411).json({
