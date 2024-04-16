@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+mongoose.connect("mongodb+srv://bsingharnav:Hardnfast%40145@cluster0.2y5m0pk.mongodb.net/")
 
 const todoSchema = mongoose.Schema({
     title: String,
